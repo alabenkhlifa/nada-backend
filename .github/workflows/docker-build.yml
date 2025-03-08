@@ -28,6 +28,7 @@ jobs:
           context: ./backend
           file: ./backend/Dockerfile
           push: true
+          platforms: linux/amd64,linux/arm64
           tags: ${{ secrets.DOCKER_USERNAME }}/forkina-backend:latest
 
       - name: Build and push Frontend Image
@@ -36,4 +37,5 @@ jobs:
           context: ./project
           file: ./project/Dockerfile
           push: true
+          platforms: linux/amd64,linux/arm64
           tags: ${{ secrets.DOCKER_USERNAME }}/forkina-frontend:latest
