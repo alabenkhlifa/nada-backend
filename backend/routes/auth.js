@@ -2,8 +2,8 @@ const router = require("express").Router();
 const passport = require("passport");
 const jwt = require("jsonwebtoken");
 
-const CLIENT_URL = "http://localhost:5173";
-const FAILURE_URL = "http://localhost:5173/signin";
+const CLIENT_URL = "http://localhost:5001";
+const FAILURE_URL = "http://localhost:5001/signin";
 
 // Initial Google authentication
 router.get("/google", 

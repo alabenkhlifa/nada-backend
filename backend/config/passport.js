@@ -4,7 +4,7 @@ const passport = require("passport");
 const User = require("../models/userModel");
 
 const BACKEND_URL = "http://localhost:5001";
-const CLIENT_URL = "http://localhost:5173";
+const CLIENT_URL = "http://localhost:5001";
 
 const GOOGLE_CONFIG = {
   clientID: "307626813879-okfk3jlk3b3ivq9gcih2qe1je8enr5l4.apps.googleusercontent.com",

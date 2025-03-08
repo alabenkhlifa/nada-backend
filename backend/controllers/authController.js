@@ -4,7 +4,7 @@ const generateToken = require("../utils/generateToken");
 const crypto = require('crypto');
 const nodemailer = require('nodemailer');
 const fetch = require('node-fetch');
-const BASE_URL = process.env.NODE_ENV === 'production' ? 'https://mon-app.com' : 'http://localhost:5173';
+const BASE_URL = process.env.NODE_ENV === 'production' ? 'https://mon-app.com' : 'http://localhost:5001';
 const { OAuth2Client } = require('google-auth-library');
 const jwt = require('jsonwebtoken');
 

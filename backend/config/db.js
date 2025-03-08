@@ -1,7 +1,8 @@
 // config/db.js
 const mongoose = require('mongoose');
+require('dotenv').config({ path: '../.env' }); // Adjust path as needed
 
-const MONGO_URI = 'mongodb://127.0.0.1:27017/medinaLab';
+const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/medinaLab";
 
 // Préparer le changement à venir dans Mongoose 7
 mongoose.set('strictQuery', true);  // ou false, selon ta préférence
